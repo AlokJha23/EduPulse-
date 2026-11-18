@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="50%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <linearGradient id="pulseGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Background rounded rectangle -->
+  <rect width="512" height="512" rx="112" fill="url(#grad)"/>
+  
+  <!-- Subtle inner glow / highlight -->
+  <rect x="16" y="16" width="480" height="480" rx="96" fill="none" stroke="#ffffff" stroke-width="4" stroke-opacity="0.15"/>
+  
+  <!-- Graduation Cap Icon -->
+  <g filter="url(#shadow)" transform="translate(256, 200)">
+    <!-- Cap Diamond Top -->
+    <path d="M 0 -75 L 140 -20 L 0 35 L -140 -20 Z" fill="#ffffff"/>
+    
+    <!-- Cap Skull Base -->
+    <path d="M -85 5 C -85 55, 85 55, 85 5 L 85 45 C 85 85, -85 85, -85 45 Z" fill="#e2e8f0"/>
+    
+    <!-- Tassel -->
+    <path d="M 120 -12 L 145 25 L 145 65" fill="none" stroke="url(#pulseGrad)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="145" cy="72" r="7" fill="#f59e0b"/>
+  </g>
+  
+  <!-- Pulse Wave Line -->
+  <g transform="translate(106, 350)" filter="url(#shadow)">
+    <path d="M 0 30 L 70 30 L 105 -25 L 140 75 L 175 -40 L 210 50 L 235 30 L 300 30" 
+          fill="none" 
+          stroke="#ffffff" 
+          stroke-width="14" 
+          stroke-linecap="round" 
+          stroke-linejoin="round"/>
+    <!-- Small energy dots -->
+    <circle cx="175" cy="-40" r="10" fill="#fbbf24"/>
+  </g>
+</svg>

@@ -1,0 +1,6 @@
+{
+  "name": "Academiq - Academic & Learning Management Suite",
+  "description": "Professional education management platform combining student notes & study resources, attendance tracking, homework assignments, online tests, marks management, progress analytics, and teacher-controlled student accounts.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
